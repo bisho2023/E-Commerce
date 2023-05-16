@@ -1,0 +1,20 @@
+<div class="top-navbar">
+  <div class="top-icons">
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+  <div class="other-links">
+    <button id="btn-logout" *ngIf="afAuth.user | async">
+      <a (click)="logout()">Logout</a>
+    </button>
+    <button id="btn-login" *ngIf="!(afAuth.user | async)">
+      <a routerLink="login">Login</a>
+    </button>
+    <button id="btn-signup" *ngIf="!(afAuth.user | async)">
+      <a routerLink="signup">Sign up</a>
+    </button>
+    <i class="fa-solid fa-user"></i>
+    <i class="fa-solid fa-cart-shopping" routerLink="cart"></i>
+  </div>
+</div>

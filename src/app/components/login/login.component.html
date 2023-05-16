@@ -1,0 +1,73 @@
+<div class="container login">
+  <div class="row">
+    <div class="col-md-4" id="side1">
+      <h3>Hello Friend!</h3>
+      <p>Create New Account</p>
+      <div id="btn"><a routerLink="/signup">Sign Up</a></div>
+    </div>
+
+    <div class="col-md-8" id="side2">
+      <h3>Login Account</h3>
+      <p>Create New Account</p>
+      <div id="inp">
+        <form #f="ngForm" (ngSubmit)="login(f)">
+          <input
+            #email="ngModel"
+            ngModel
+            name="email"
+            type="email"
+            placeholder="Email"
+            required
+            email
+          />
+          <div
+            class="alert alert-danger"
+            *ngIf=" email.touched && email.errors?.['required']"
+          >
+            Email is required
+          </div>
+          <div
+            class="alert alert-danger"
+            *ngIf=" email.touched && email.errors?.['email']"
+          >
+            Your input doesn't match email format
+          </div>
+
+          <input
+            ngModel
+            #password="ngModel"
+            name="password"
+            type="password"
+            placeholder="Password"
+            required
+            minlength="6"
+          />
+
+          <div
+            class="alert alert-danger"
+            *ngIf=" password.touched && password.errors?.['required']"
+          >
+            Passowrd is required
+          </div>
+          <div
+            class="alert alert-danger"
+            *ngIf=" password.touched && password.errors?.['minlength']"
+          >
+            Your Password must be at least 6 characters
+          </div>
+          <p>Forget Your Password</p>
+          <div class="icons">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+
+          <div id="login"><button [disabled]="f.invalid">LOG IN</button></div>
+          <div class="alert alert-danger mt-2" *ngIf="errorMsg">
+            {{ errorMsg }}
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

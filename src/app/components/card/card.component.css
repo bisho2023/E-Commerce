@@ -1,0 +1,158 @@
+#top-cards {
+  margin-top: 30px;
+  font-family: "Roboto Slab", serif;
+  position: relative;
+}
+
+#top-cards .desc {
+  height: 50px;
+  overflow: hidden;
+}
+
+
+#top-cards .card img {
+  height: 60vh;
+}
+
+#top-cards h5 {
+  color: #1c1c50;
+  font-weight: bold;
+}
+
+#top-cards button {
+  width: 150px;
+  height: 33px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: transparent;
+  color: #1c1c50;
+  border: 2px solid #1c1c50;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  margin: auto;
+}
+
+#top-cards button:hover {
+  background-color: #1c1c50;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin-top: 50px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../assets/banner.jpg);
+}
+
+.banner .content {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.banner .content h1 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 3px;
+}
+
+.banner .content p {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  letter-spacing: 3px;
+}
+
+.bannerbtn button {
+  width: 150px;
+  height: 38px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+#bannerbtn button:hover {
+  background-color: #1c1c50;
+  border: none;
+}
+
+#product.cards {
+  font-family: "Roboto", serif;
+  margin-top: 100px;
+}
+
+#product-cards .card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+#product-cards .card:hover {
+  transform: scale(1.1);
+}
+
+#product-cards h1 {
+  margin-top: 30px;
+  color: #1c1c50;
+  text-shadow: 1px 1px 1px black;
+}
+
+#product-cards .card-body .title {
+  height: 100px;
+  overflow: hidden;
+}
+
+#product-cards h3 {
+  letter-spacing: 3px;
+  color: #1c1c50;
+  text-shadow: 0px 1px 1px black;
+  font-weight: bold;
+}
+
+#product-cards h5 span {
+  float: right;
+  color: #1c1c50;
+  cursor: pointer;
+}
+
+.checked {
+  color: yellow;
+}
+
+#product-cards img {
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#viewmorebtn {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  text-decoration: none;
+  margin-top: 30px;
+  width: 200px;
+  height: 32px;
+  color: #1c1c50;
+  letter-spacing: 5px;
+  font-weight: bold;
+  background: transparent;
+  border: 2px solid #1c1c50;
+}
+
+#viewmorebtn:hover {
+  background-color: #1c1c50;
+  color: white;
+}
+
+#offer {
+  margin-top: 50px;
+  margin-right: 10px;
+}
+
+#offer i {
+  font-size: 60px;
+  color: #1c1c50;
+}/*# sourceMappingURL=card.component.css.map */

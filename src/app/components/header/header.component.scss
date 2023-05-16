@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab&family=Roboto:ital,wght@1,500&display=swap");
+
+.home-section
+{
+  width: 100%;
+  background-color: #a9a9a926;
+}
+
+#navbar{
+  background-color: #1c1c50;
+  font-size: 16px;
+
+}
+#navbar .navbar-brand
+{
+  color: white;
+  font-family: 'Roboto Slab', serif;
+}
+#navbar .nav-link
+{
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: 0.5s ease;
+}
+
+#navbar .nav-link:hover{
+  color: white;
+  border-radius: 5px;
+}
+
+.dropdown li a
+{
+  color:white
+}
+
+#search-btn{
+  color: white;
+  border:1px solid white;
+}
+
+
+#search-btn:hover
+{
+  background-color: #1c1c50;
+}

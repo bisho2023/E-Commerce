@@ -1,0 +1,137 @@
+<div class="container" id="top-cards">
+  <div class="row">
+    <div class="col-md-4 py-3 py-md-0 item" *ngFor="let prd of thressProducts">
+      <div class="card" style="background-color: #a9a9a926" routerLink="/details/{{prd.id}}">
+        <img src="{{ prd.image }}" />
+        <div class="card-img-overlay">
+          <h5 class="card-title">{{ prd.title }}</h5>
+          <div class="desc">
+            <p>
+              {{ prd.description }}
+            </p>
+          </div>
+          <p>
+            <strong>${{ prd.price }} <del>$250</del></strong>
+          </p>
+          <!-- <button (click)="addToCart(prd)">Add To Card</button> -->
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="banner">
+  <div class="content">
+    <h1>Get Up To 50% Off</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, illum!
+    </p>
+    <div id="bannerbtn"><button>SHOP NOW</button></div>
+  </div>
+</div>
+
+<div class="container" id="product-cards">
+  <h1 class="text-center">PRODUCT</h1>
+
+  <div class="row" *ngIf="!loading" style="margin-top: 30px">
+    <div class="col-lg-3 col-md-6 py-3 py-md-0 mt-3" *ngFor="let prd of firstFourProducts">
+      <div class="card " routerLink="/details/{{prd.id}}">
+        <img src="{{ prd.image }}" />
+        <div class="card-body">
+          <div class="title">
+            <h3>{{ prd.title }}</h3>
+          </div>
+          <br />
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>
+            ${{ prd.price }} <del>$250</del>
+            <!-- <span>
+              <i class="fa-solid fa-cart-shopping" (click)="addToCart(prd)"></i
+            ></span> -->
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="!loading" style="margin-top: 30px">
+    <div class="col-lg-3 col-md-6 py-3 py-md-0" *ngFor="let prd of secondFourProduct">
+      <div class="card" routerLink="/details/{{prd.id}}">
+        <img src="{{ prd.image }}" />
+        <div class="card-body">
+          <div class="title">
+            <h3>{{ prd.title }}</h3>
+          </div>
+          <br />
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>
+            ${{ prd.price }} <del>$250</del>
+            <span>
+            </span>
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center w-100" *ngIf="loading">
+    <app-spin></app-spin>
+  </div>
+
+  <a href="clothe.html" id="viewmorebtn">View More</a>
+</div>
+
+<div class="container" style="margin-top: 100px">
+  <hr />
+</div>
+
+<div class="container">
+  <h3 style="font-weight: bold">PRODUCT</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae
+    voluptas veritatis distinctio laudantium minima ipsam quibusdam nesciunt
+    omnis deleniti rerum, debitis velit quis cumque autem? Unde voluptatem
+    magnam autem odio, natus consequuntur, inventore officia voluptate ipsam, ut
+    eum aspernatur cupiditate reiciendis labore quis nesciunt. Porro facere,
+    obcaecati ab magnam voluptatibus inventore! Nam eum ex fugit est facilis!
+    Quo corrupti incidunt, autem aperiam nulla eius ab vel delectus esse nihil
+    ea possimus quasi tenetur aut voluptate soluta, iure labore est iusto
+    voluptates alias rem. Natus laudantium distinctio ea, nesciunt iure dolor
+    illum quibusdam iste, accusamus dolore voluptas fuga nobis sequi!
+  </p>
+  <hr />
+</div>
+
+<div class="container" id="offer">
+  <div class="row">
+    <div class="col-md-4 col-sm-4 col-xs-6 py-md-0">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <h5>Free Shopping</h5>
+      <p>On order Over $100</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6 py-md-0">
+      <i class="fa-solid fa-truck"></i>
+      <h5>Fast Delivery</h5>
+      <p>World wide</p>
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-6 py-md-0">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <h5>Big Choice</h5>
+      <p>Of product</p>
+    </div>
+  </div>
+</div>

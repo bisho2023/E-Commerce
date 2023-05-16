@@ -1,0 +1,56 @@
+
+*{
+    padding: 5px;
+}
+.container img
+{
+    height: 100vh;
+}
+
+.container h3
+{
+
+    font-size: 40px;
+    text-shadow: 1px 1px 1px black;
+    color: #1c1c50;
+    font-weight: bold;
+}
+.container p{
+    color: #1c1c50;
+}
+
+.container h4{
+    color: #1c1c50;
+}
+.container h4 span{
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+.container button {
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    background: transparent;
+    color: #1c1c50;
+    border: 2px solid #1c1c50;
+    position: absolute;
+    margin-top: 2rem;
+    margin: auto;
+    transition: all 0.6s ease;
+    
+  }
+
+  
+  .container button:hover{
+    background-color: #1c1c50;
+    color: white;
+  
+  }
+
+  .counter
+  {
+    display: flex;
+    margin-bottom: 10px;
+  }
