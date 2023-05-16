@@ -22,6 +22,9 @@ get userLoggedState():boolean
 
 
   signup(email:any,password:any) {
+    let obj={email:email,password:password}
+    localStorage.setItem("user",JSON.stringify(obj))
+    this.isLogged.next(true);
    return this.afAuth.createUserWithEmailAndPassword(email,password)
   }
   login(email:any,password:any){

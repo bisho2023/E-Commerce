@@ -19,7 +19,7 @@ export class SignupComponent {
       this.errorMsg = ''
       window.alert("You have been successfully registered!");
       this.us.addNewUser(result.user?.uid,data.name).then(()=>{
-        this.router.navigate(['/login']);
+        this.router.navigate(['/home']);
       })
     } )
     .catch(err => {
