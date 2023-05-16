@@ -14,6 +14,7 @@ export class ProductDetailsComponent implements OnInit{
   data:any={}
   constructor(private route:ActivatedRoute,private prdSer:ProductsService){
     this.id=this.route.snapshot.paramMap.get("id")
+    window.scrollTo(0, 0)
   }
   ngOnInit() {
    this.getProduct()
