@@ -233,10 +233,34 @@ label {
   }
   
 }
+@media screen and (max-width: 479px)
+{
 
+  .product-quantity { 
+    display: flex;
+     }
+     .product .product-quantity button
+     {
+      width: 10px;
+      text-align: center;
+      height: 25px;
+     
+      
+     }
+
+     
+     .product .product-quantity input
+     {
+      width: 20px;
+      height: 25px;
+
+     }
+
+}
 
 /* Make more adjustments for phone */
 @media screen and (max-width: 350px) {
+
   
   .product-removal {
     float: right;
@@ -249,9 +273,7 @@ label {
     margin-top: 10px;
   }
   
-  .product .product-line-price:before {
-    content: 'Item Total: $';
-  }
+
   
   .totals {
     .totals-item {

@@ -43,7 +43,7 @@
   color:#1c1c50;
   font-weight: bold;
   border-radius: 5px;
-  height: 5vh;
+  height: auto;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -74,7 +74,7 @@
   color:#1c1c50;
   font-weight: bold;
   border-radius: 5px;
-  height: 5vh;
+  height: auto;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -105,7 +105,7 @@
   color:#1c1c50;
   font-weight: bold;
   border-radius: 5px;
-  height: 5vh;
+  height: auto;
   transition: 0.5s ease;
   cursor: pointer;
 }
@@ -130,98 +130,41 @@
 
 
 
-@media screen and (max-width:500px)
+
+@media screen and (max-width:768px)
 {
-  .top-icons{
-    margin-left: 30px;
-  }
-  .top-icons i{
+  #btn-signup{
+    width: 90px;
+    height: auto;
     font-size: 15px;
   }
-  .other-links i
-  {
+  #btn-login{
+    width: 90px;
+    height: auto;
     font-size: 15px;
-  }
-
-  #btn-login{
-    width: 60px;
-    height: 5vh;
-  }
-
-  #btn-signup{
-    width: 70px;
-    height: 5vh;
-  }
-
-  #btn-logout
-  {
-    width: 70px;
-  }
-}
-
-
-@media screen and (max-width:350px)
-{
-  .top-icons{
-    margin-left: 10px;
-  }
-  .top-icons i{
-    font-size: 10px;
-  }
-  .other-links
-  {
-    margin-right: 10px;
-  }
-  .other-links i
-  {
-    font-size: 10px;
-  }
-
-  #btn-login{
-    width: 50px;
-    height: 5vh;
-    font-size: 13px;
-  }
-
-  #btn-signup{
-    width: 60px;
-    height: 5vh;
-    font-size: 13px;
   }
   #btn-logout{
-    width: 60px;
-    height: 5vh;
-    font-size: 13px;
+    width: 90px;
+    height: auto;
+    font-size: 15px;
   }
 }
 
-
-@media screen and (max-width:350px)
+@media screen and (max-width:410px)
 {
-  .top-icons{
-    margin-left: 5px;
-  }
-  .top-icons i{
-    font-size: 12px;
-  }
-  .other-links
-  {
-    margin-right: 10px;
-  }
-  .other-links i
-  {
-    font-size: 12px;
-  }
-
-  #btn-login{
-    width: 40px;
-    height: 5vh;
-    font-size: 10px;
-  }
-
   #btn-signup{
     width: 50px;
-    height: 5vh;
+    height: auto;
+    font-size: 8px;
+  }
+  #btn-login{
+    width: 50px;
+    height: auto;
+    font-size: 8px;
+  }
+  #btn-logout{
+    width: 50px;
+    height: auto;
     font-size: 10px;
   }
 }
