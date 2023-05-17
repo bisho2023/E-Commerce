@@ -153,18 +153,28 @@
 @media screen and (max-width:410px)
 {
   #btn-signup{
-    width: 50px;
-    height: auto;
-    font-size: 8px;
-  }
-  #btn-login{
-    width: 50px;
-    height: auto;
-    font-size: 8px;
-  }
-  #btn-logout{
-    width: 50px;
+    width: 60px;
     height: auto;
     font-size: 10px;
+  }
+  #btn-login{
+    width: 60px;
+    height: auto;
+    font-size: 10px;
+  }
+  #btn-logout{
+    width: 60px;
+    height: auto;
+    font-size: 10px;
+  }
+
+  .top-navbar .top-icons .fa-brands
+  {
+    font-size: 18px;
+  }
+
+  .other-links .fa-solid
+  {
+    font-size: 18px;
   }
 }
